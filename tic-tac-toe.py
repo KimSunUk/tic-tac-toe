@@ -1,12 +1,12 @@
 from tkinter import *
 
 def checked(i) :
-      global player
+      global player c
       button = list[i]
 
       if button["text"] != "     " :
             return
-      button["text"] = player 
+      button["text"] = player c
       button["bg"] = "yellow"
 
       if player == "X" :
@@ -15,6 +15,13 @@ def checked(i) :
       else :
             player = "X"
             button["bg"] = "lightgreen"
+
+
+
+
+
+
+
 
 window = Tk()
 player = "X"
@@ -26,5 +33,3 @@ for i in range(9) :
       list.append(b)
 
 window.mainloop()
-
-
